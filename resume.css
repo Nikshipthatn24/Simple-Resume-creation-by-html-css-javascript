@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px  ;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 30px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo:hover,a.logo{
+    color: aqua;
+}
+nav a{
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: .3s;
+}
+nav a:hover{
+    color: aqua;
+}
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(4, 11, 19);
+    background-image:url(/images.jpg) ;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+
+}
+#res p{
+   /* border: 2px solid black; */
+   font-size: 150px;
+   text-transform: uppercase;
+   color: rgb(33, 30, 30);
+   text-shadow: 5px 8px 6px  rgb(247, 77, 43);
+ 
+   background-repeat: no-repeat;
+   background-size: cover;
+   animation-name: p;
+   animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+        
+}
+
+
+@keyframes p{
+   40%{
+    color: red;
+    padding-left: 50px;
+    
+
+   } 
+    80%{
+    padding-top: 30px;
+    color: black;
+   }
+} 
+
+
+#career p {
+    font-size: 40px;
+    font-weight: 100;
+    color: red;
+    text-transform: uppercase;
+    /* border: 3px solid black; */
+    border-radius: 80px;
+    padding: 20px 30px;
+    box-shadow: 0px 1px 25px 20px black;
+    background-color:black;
+    text-shadow: 0px 1px 4px  rgb(248, 237, 237);
+    animation-name: c;
+    animation-duration: 3.5s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+  
+}
+@keyframes c{
+    40%{
+        color: yellow;
+        padding-left: 50px;
+    }
+    60%{
+     color: rgb(21, 0, 255);
+     padding-right: 60px;
+ 
+    }
+    
+ }
+#technical  pre{
+    font-size: 25px;
+    font-weight: 100;
+    color: red;
+    border-radius: 80px;
+    box-shadow: 0px 1px 25px 20px black;
+    background-color:black;
+    text-shadow: 0px 1px 1px  rgb(248, 237, 237);
+    animation-name: c;
+    animation-duration: 3.5s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+    
+    
+}
+section .col{
+    animation-name: c;
+    animation-duration: 3.5s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+}
+#project p{
+    font-size: 28px;
+    padding: 25px;
+    font-weight: 100;
+    color: red;
+    width: 1000px;
+    height: 350px;
+    border-radius: 30px;
+    box-shadow: 0px 1px 25px 20px black;
+    background-color:black;
+    text-shadow: 0px 1px 1px  rgb(248, 237, 237);
+    animation-name: d;
+    animation-duration: 3.5s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+    
+}
+#certificate pre{
+    font-size: 28px;
+    padding: 25px;
+    font-weight: 100;
+    color: red; 
+    border-radius: 30px;
+    box-shadow: 0px 1px 25px 20px black;
+    background-color:black;
+    text-shadow: 0px 1px 1px  rgb(248, 237, 237);
+    animation-name: c;
+    animation-duration: 3.5s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+
+}
+#education pre{
+    font-size: 28px;
+    padding: 25px;
+    font-weight: 100;
+    color: red;
+    
+    border-radius: 30px;
+    box-shadow: 0px 1px 25px 20px black;
+    background-color:black;
+    text-shadow: 0px 1px 1px  rgb(248, 237, 237);
+    animation-name: c;
+    animation-duration: 3.5s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+}
+@keyframes d{
+    40%{
+        color: yellow;
+    }
+    60%{
+     color: rgb(21, 0, 255);
+ 
+    }
+    
+ }
+section:nth-child(odd){
+    background-image: url(/images4.jfif);
+}
+
+footer {
+ 
+    padding: 100px 100px  ;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer a{
+    color: aqua;
+    text-decoration: none;
+  
+
+}
+footer a:hover{
+    padding-left: 20px;
+    color: rgb(201, 238, 78);
+
+
+}
